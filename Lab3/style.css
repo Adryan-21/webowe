@@ -1,0 +1,86 @@
+/* 
+czcionka: arial
+kolor obramowania odnośnika #819791; 
+szerokość strony: 460px
+odstęp między zdjęciami w galerii: 10px;
+nagłówek (About Layer 51): #cbd6df, brak pogrubienia
+tekst podstawowy: 13px, wysokość wiersz 32px, wyrównanie: justify
+kolor obramowania odnośnika: #819791
+stopka: 11px, #444
+
+*/
+body{
+    background-image: url("/Lab3/layer51/tlo.png");
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial;
+
+}
+
+.container{
+    width: 460px;
+    height: 100vh;
+}
+
+
+.top{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #cbd6df;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.top p{
+    margin: 0;
+}
+
+.images{
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+}
+
+.images img{
+   margin: 5px;
+}
+
+.main h1{
+    color: #cbd6df;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 10px;
+}
+
+.main p {
+    font-size: 13px;
+    line-height: 32px;
+    text-align: justify;
+    color: #819791;
+}
+
+.main a{
+    border-bottom: 1px dotted #819791;
+    text-decoration: none;
+    color: #819791;
+}
+
+.main{
+    text-align: center;
+}
+.main img{
+    padding: 10px;
+}
+
+.footer{
+    font-size:11px;
+    color:#444;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    text-align: center;
+}
