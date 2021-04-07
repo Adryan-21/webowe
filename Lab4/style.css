@@ -1,0 +1,148 @@
+ *{
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0;
+ }
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.menu{
+    width: 150px;
+    height: 100%;
+    background-color: #252a3a;
+    font-size: 16px;
+}
+.main2{
+    display: flex;
+}
+
+.menu button{
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin: 16px;
+    background-color: #1b98f8;
+    border: 0;
+    color: white;
+}
+.menu a {
+    margin-left: 20px;
+    color: white;
+}
+
+.menu h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: rgb(8, 107, 255);
+}
+
+
+
+.mail{
+    width: 350px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.email{
+    padding: 14px 16px;
+    display: inline-flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.email img{
+    width: 42px;
+    height: 42px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.email h4{
+    text-transform: uppercase;
+    color: #999;
+    font-size: 13px;
+}
+.email h3{
+    color: black;
+    font-size: 16px;
+}
+.email p{
+    color: #000;
+    font-size: 13px;
+    margin: 7px 0;
+}
+
+.first{
+    background-color: #eee
+}
+
+.new {
+    border-left: 6px solid #1b98f8;
+}
+
+.mails{
+    height: 100%;
+    padding: 16px;
+
+}
+
+.title{
+    display: flex;
+    padding-top: 16px;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+}
+.title h1{
+    font-size: 32px;
+}
+
+.text{
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+.person{
+    color: #1b98f8;
+}
+.date{
+    color: #999;
+}
+
+.title button{
+    color: #666;
+    font-size: 16px;
+    padding: 6px 26px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    margin: 2px;
+}
+
+.buttons{
+    text-align: right;
+}
+
+
+@media only screen and (max-width: 930px) {
+    .main2{
+        display: block;
+        overflow-y: auto;
+    }
+    .mail{
+        max-height: 33%;
+        width: 100%;
+    }
+    .email{
+        width: 100%;
+    }
+    .main2{
+        display: block;
+        overflow-y: auto;
+    }
+}
