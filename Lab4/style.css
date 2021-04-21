@@ -30,8 +30,11 @@
     color: white;
 }
 .menu p{
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2.5%;
+    position: relative;
+
 }
 
 .menu h3 {
@@ -125,6 +128,26 @@
     text-align: right;
 }
 
+.squere{
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-left: 4%;
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: turquoise;
+}
+.green{
+    background-color: lime;
+}
+
+.lab{
+    padding-left: 5%;
+}
 
 @media only screen and (min-width: 639px) {
     .main{
@@ -134,6 +157,17 @@
         grid-template-columns: 150px auto;
         /*overflow: hidden;*/
         
+    }
+    .squere{
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        border-radius: 4px;
+        margin-left: 14%;
+    }
+    
+    .lab{
+        padding-left: 15%;
     }
     .cont{
         display: grid;
