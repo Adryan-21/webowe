@@ -1,0 +1,79 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-self: center;
+  align-self: center;
+}
+.cards {
+  display: grid;
+  background-color: red;
+  width: 900px;
+  height: 450px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  position: relative;
+  background-color: blue;
+  width: 90%;
+  height: 90%;
+  justify-self: center;
+  align-self: center;
+  transform: scale(0.9);
+  z-index: 0;
+}
+
+#one {
+  background-color: gold;
+  left: 10%;
+}
+#two {
+  background-color: green;
+  left: -10%;
+}
+
+.use-one {
+  transform: scale(1);
+  z-index: 1;
+  box-shadow: 2px 0 10px black;
+}
+.use-two {
+  transform: scale(1);
+  z-index: 1;
+  box-shadow: -2px 0 10px black;
+}
+
+.one {
+  animation: one 1.25s linear;
+}
+
+@keyframes one {
+  0% {
+    left: 10%;
+  }
+  50% {
+    left: 0%;
+    transform: scale(0.9);
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+.two {
+  animation: one 1.25s linear;
+}
+
+@keyframes two {
+  0% {
+    left: -10%;
+  }
+  50% {
+    left: 0%;
+    transform: scale(0.9);
+  }
+  100% {
+    left: -10%;
+  }
+}

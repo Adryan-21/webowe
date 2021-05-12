@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cards">
+        <div class="card use-one" id="one"></div>
+        <div class="card" id="two"></div>
+    </div>
+
+    <button onclick="Change()">Click</button>
+    <script>
+        var f = 0;
+        function Change() {
+            if(f==0){
+                document.getElementById('one').style.animation = 'one 2s linear'
+                document.getElementById('two').style.animation = 'two 2s linear'
+                setTimeout(() => {
+                    document.getElementById('two').classList.add("use-two")
+                    document.getElementById('one').classList.remove("use-one")
+                    setTimeout(() => {
+                        document.getElementById('two').style.animation = null
+                        document.getElementById('one').style.animation = null
+                    }, 1000);
+                }, 1000);
+                f=1;
+            }else{
+                document.getElementById('one').style.animation = 'one 2s linear'
+                document.getElementById('two').style.animation = 'two 2s linear'
+                setTimeout(() => {
+                    document.getElementById('one').classList.add("use-one")
+                    document.getElementById('two').classList.remove("use-two")
+                    setTimeout(() => {
+                        document.getElementById('two').style.animation = null
+                        document.getElementById('one').style.animation = null
+                    }, 1000);
+                }, 1000);
+                f=0;
+            }
+        }
+    </script>
+</body>
+</html>
