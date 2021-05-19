@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+body {
+  background: grey;
+  overflow: hidden;
+}
+
+.scene {
+  width: 100%;
+  height: 100vh;
+  perspective: 1000px;
+}
+
+.cube {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: 1s;
+}
+
+.back {
+  display: grid;
+  background: rgb(29, 115, 173);
+}
+
+button {
+  justify-self: center;
+  align-self: center;
+  width: 25%;
+}
+
+.menu {
+  position: absolute;
+  left: -25%;
+  width: 20%;
+  height: 100vh;
+  background: red;
+  transition: 1s;
+  z-index: 5;
+}

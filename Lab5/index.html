@@ -18,28 +18,28 @@
         var f = 0;
         function Change() {
             if(f==0){
-                document.getElementById('one').style.animation = 'one 2s linear'
-                document.getElementById('two').style.animation = 'two 2s linear'
+                document.getElementById('one').style.animation = 'one 0.75s linear'
+                document.getElementById('two').style.animation = 'two 0.75s linear'
                 setTimeout(() => {
                     document.getElementById('two').classList.add("use-two")
                     document.getElementById('one').classList.remove("use-one")
                     setTimeout(() => {
                         document.getElementById('two').style.animation = null
                         document.getElementById('one').style.animation = null
-                    }, 1000);
-                }, 1000);
+                    }, 375);
+                }, 375);
                 f=1;
             }else{
-                document.getElementById('one').style.animation = 'one 2s linear'
-                document.getElementById('two').style.animation = 'two 2s linear'
+                document.getElementById('one').style.animation = 'one 0.75s linear'
+                document.getElementById('two').style.animation = 'two 0.75s linear'
                 setTimeout(() => {
                     document.getElementById('one').classList.add("use-one")
                     document.getElementById('two').classList.remove("use-two")
                     setTimeout(() => {
                         document.getElementById('two').style.animation = null
                         document.getElementById('one').style.animation = null
-                    }, 1000);
-                }, 1000);
+                    }, 375);
+                }, 375);
                 f=0;
             }
         }
