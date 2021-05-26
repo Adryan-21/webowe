@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital@1&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f3f4f5;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100% 65%;
+  justify-items: center;
+  align-items: center;
+  background-image: url("/Lab7/download.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.top {
+  width: 60%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 0.65fr 5fr;
+  padding-top: 2%;
+}
+
+.menu {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #cad2d7;
+  justify-items: left;
+  align-items: center;
+  grid-template-columns: 1fr 5fr;
+}
+
+.buttons {
+  display: grid;
+  justify-self: end;
+  width: 70%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.buttons .link {
+  text-decoration: none;
+  width: 70%;
+  padding: 7.5%;
+  height: min-content;
+  text-align: center;
+  align-content: center;
+  border-radius: 3px;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.buttons .active {
+  background-color: #ffc000;
+  color: #fff;
+}
+
+.logo {
+  width: 100%;
+  padding: 0;
+  transition: 0.5s;
+}
+.logo:hover {
+  opacity: 0.7;
+}
+
+.logoimg {
+  width: 70%;
+}
+
+.buttons a:hover {
+  background-color: #646d72;
+}
+
+.readmore {
+  transition: 0.5s;
+}
+
+.readmore:hover {
+  color: #ffc000;
+}
+
+.desc {
+  width: 100%;
+  height: 100%;
+}
+
+.cta {
+  position: relative;
+  width: 60%;
+  height: min-content;
+  top: 20%;
+}
+
+.cta h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 96px;
+  margin-bottom: 15px;
+  letter-spacing: -2px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 100%;
+  margin: 25px 0 0.5em;
+}
+
+.cta h3 {
+  font-family: "Aleo", serif;
+  letter-spacing: 0;
+  color: #e2e2e2;
+  font-size: 28px;
+  line-height: 100%;
+  margin: 25px 0 0.5em;
+  font-weight: 100;
+}
+
+.cta h5 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 100%;
+  margin: 25px 0 0.5em;
+}
+
+.cta p {
+  color: #fff;
+  word-wrap: break-word;
+  margin: 1em 0;
+  font-weight: 600;
+}
+
+.cta a {
+  color: #3c4a52;
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.infos {
+  background-color: #f3f4f5;
+  width: 60%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  align-self: flex-start;
+  border-bottom: 1px solid red;
+  margin-bottom: 5%;
+}
+
+.info {
+  width: 100%;
+  height: 90%;
+}
