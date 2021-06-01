@@ -7,6 +7,8 @@
     <title>CountrySideRP</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="LOGO.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
     <div class="menu">
@@ -15,6 +17,14 @@
         <a href="faq.html" class="link link-active">FAQ</a>
         <a href="https://discord.gg/H4MddXb" class="link">Discord</a>
         <a href="https://paypal.me/pools/c/8uw9CSOxXE" class="link">Donate</a>
+    </div>
+    <div class="menu2" onclick="openmenu()">
+        <a href="#main" class="link2 link-active">Home</a>
+        <a href="regulamin.html" class="link2">Regulamin</a>
+        <a href="faq.html" class="link2">FAQ</a>
+        <a href="https://discord.gg/H4MddXb" class="link2">Discord</a>
+        <a href="https://paypal.me/pools/c/8uw9CSOxXE" class="link2">Donate</a>
+        <img src="/menuicon.png" alt="" class="logomenu">
     </div>
     <div class="main">
         <div class="faq">
@@ -191,23 +201,7 @@
             <div class="footer transpar">Copyright © 2021 <a href="http://countrysiderp.com">CountrySideRP</a>. Wszelkie prawa zastrzeżone</div>
         </div>
     </div>
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
+    <script src="/script.js"></script>
 
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.lastElementChild.classList.toggle("active");                
-                var content = this.nextElementSibling;
-                
-           
-            if (content.style.maxHeight){
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            } 
-        });
-        }
-    </script>
 </body>
 </html>
