@@ -168,6 +168,55 @@ body {
 }
 
 .info {
-  width: 100%;
+  width: 85%;
   height: 90%;
+  display: grid;
+  grid-template-rows: 0.5fr 2fr;
+}
+
+.info h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  margin-top: 15px;
+  font-weight: normal;
+}
+
+.main2 {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100% 65%;
+  justify-items: center;
+  align-items: center;
+}
+
+.desc2 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.desc2 img {
+  width: 90%;
+  padding-top: 5%;
+  cursor: pointer;
+}
+
+.lightbox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 5;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.visible {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }

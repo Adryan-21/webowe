@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main2">
+        <div class="top">
+            <div class="menu">
+               <a href="" class="logo"><img src="download.png" alt="" class="logoimg"></a>
+
+               <div class="buttons">
+                   <a href="" class="link active">Home</a>
+                   <a href="" class="link">About</a>
+                   <a href="" class="link">Styles</a>
+                   <a href="gallery.html" class="link">Gallery</a>
+                   <a href="" class="link">Blog</a>
+                   <a href="" class="link">Contact</a>
+               </div>
+            </div>
+            <div class="desc2">
+                <img src="http://make-lemonade.co/themes/selfy/img/mock.jpg" alt="" id="img1">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="lightbox">
+        <img src="http://make-lemonade.co/themes/selfy/img/mock.jpg" alt="">
+    </div>
+
+    <script>
+        const img = document.querySelector("#img1")
+
+        img.addEventListener('click',openlightbox)
+        
+
+        function openlightbox() {
+            const lightbox = document.querySelector(".lightbox")
+            lightbox.classList.add("visible")
+            console.log(lightbox);
+        }
+    </script>
+</body>
+</html>
